@@ -1,0 +1,30 @@
+SOURCE_DIRECTORY := src
+SOURCE_EXTENSION := .md
+SOURCE_FILES = $(shell find $(SOURCE_DIRECTORY) -type f -name '*$(SOURCE_EXTENSION)')
+
+OUTPUT_DIRECTORY := site
+OUTPUT_EXTENSION := .html
+OUTPUT_FILES = $(patsubst $(SOURCE_DIRECTORY)/%.md,$(OUTPUT_DIRECTORY)/%$(OUTPUT_EXTENSION), $(SOURCE_FILES))
+
+ASSETS_DIRECTORY := assets
+
+GENERATOR := pandoc
+GENERATOR_FLAGS = --standalone --from markdown --to html5 --template=index.html
+
+DEPLOY_SERVER := 192.168.1.51
+DEPLOY_PATH := /var/www/Webfiles/DotN64
+
+all: $(OUTPUT_FILES)
+	cp -r $(ASSETS_DIRECTORY)/. $(OUTPUT_DIRECTORY)
+
+$(OUTPUT_DIRECTORY)/%$(OUTPUT_EXTENSION): $(SOURCE_DIRECTORY)/%$(SOURCE_EXTENSION)
+	mkdir -p $(OUTPUT_DIRECTORY)
+	$(GENERATOR) $(GENERATOR_FLAGS) $< -o $@
+
+deploy: all
+	scp -r $(OUTPUT_DIRECTORY)/. $(DEPLOY_SERVER):$(DEPLOY_PATH)
+
+clean:
+	rm -r $(OUTPUT_DIRECTORY)
+
+.PHONY: all clean
