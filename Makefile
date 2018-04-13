@@ -32,4 +32,4 @@ deploy: all
 clean:
 	rm -r $(OUTPUT_DIRECTORY)
 
-.PHONY: all clean
+.PHONY: all deploy clean
