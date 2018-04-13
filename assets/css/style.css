@@ -40,6 +40,10 @@ header {
     background-image: linear-gradient(2rad, #155799, #159957);
 }
 
+footer > hr {
+    background: #111;
+}
+
 p {
     padding: 0em 0.5em;
 }
@@ -108,4 +112,10 @@ p {
 
 .button + .button {
     margin-left: 1rem;
+}
+
+.power-indicator {
+    background-image: radial-gradient(ellipse, red 60%, transparent 75%);
+    width: 2.25rem;
+    height: 0.9rem;
 }
