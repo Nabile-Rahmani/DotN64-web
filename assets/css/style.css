@@ -18,6 +18,10 @@ h1 {
     font-size: 2em;
 }
 
+h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
+    text-shadow: 0em 0em 0.2em;
+}
+
 a {
     color: #1E6BB8;
     text-decoration: none;
