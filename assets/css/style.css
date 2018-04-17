@@ -1,125 +1,125 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
 :root {
-    --background: #222;
-    --foreground: #DEE;
-    --accent: #159957;
+  --background: #222;
+  --foreground: #DEE;
+  --accent: #159957;
 }
 
 body {
-    background-color: var(--background);
-    color: var(--foreground);
-    font-family: "Open Sans", sans-serif;
-    padding: 0;
-    margin: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
-    text-shadow: 0em 0em 0.2em;
+  text-shadow: 0em 0em 0.2em;
 }
 
 a {
-    color: #1E6BB8;
-    text-decoration: none;
+  color: #1E6BB8;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 hr {
-    border-style: none;
-    background-image: linear-gradient(to right, #069330 25%, #011DA9 25%, #011DA9 50%, #FE2015 50%, #FE2015 75%, #FFC001 75%, #FFC001 100%);
-    height: 2px;
-    opacity: 0.7;
+  border-style: none;
+  background-image: linear-gradient(to right, #069330 25%, #011DA9 25%, #011DA9 50%, #FE2015 50%, #FE2015 75%, #FFC001 75%, #FFC001 100%);
+  height: 2px;
+  opacity: 0.7;
 }
 
 header {
-    padding: 5rem 6rem;
-    text-align: center;
-    background-image: linear-gradient(2rad, #155799, #159957);
+  padding: 5rem 6rem;
+  text-align: center;
+  background-image: linear-gradient(2rad, #155799, #159957);
 }
 
 footer > hr {
-    background: #111;
+  background: #111;
 }
 
 p {
-    padding: 0em 0.5em;
+  padding: 0em 0.5em;
 }
 
 .shadow {
-    text-shadow: var(--background) 0em 0em 0.08em;
+  text-shadow: var(--background) 0em 0em 0.08em;
 }
 
 .page-content {
-    font-size: 1.1rem;
-    margin: auto;
-    max-width: 75%;
-    padding: 2rem 5rem;
-    word-wrap: break-word;
+  font-size: 1.1rem;
+  margin: auto;
+  max-width: 75%;
+  padding: 2rem 5rem;
+  word-wrap: break-word;
 }
 
 .page-content :first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .page-content h1, .page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6 {
-    color: var(--accent);
-    font-weight: normal;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+  color: var(--accent);
+  font-weight: normal;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .title {
-    font-size: 3.25rem;
-    margin-top: 0;
-    margin-bottom: 0.1rem;
+  font-size: 3.25rem;
+  margin-top: 0;
+  margin-bottom: 0.1rem;
 }
 
 .title > a {
-    color: var(--foreground);
+  color: var(--foreground);
 }
 
 .subtitle {
-    font-size: 1.25rem;
-    font-weight: normal;
-    margin-bottom: 2rem;
-    opacity: 0.7;
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+  opacity: 0.7;
 }
 
 .button {
-    color: rgba(255, 255, 255, 0.7);
-    background-color: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.2);
-    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 0.3rem;
-    padding: 0.75rem 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  padding: 0.75rem 1rem;
 }
 
 .button:hover {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
-    text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
 }
 
 .button:active {
-    outline: 0;
+  outline: 0;
 }
 
 .button + .button {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .power-indicator {
-    background-image: radial-gradient(ellipse, red 60%, transparent 75%);
-    width: 2.25rem;
-    height: 0.9rem;
+  background-image: radial-gradient(ellipse, red 60%, transparent 75%);
+  width: 2.25rem;
+  height: 0.9rem;
 }
