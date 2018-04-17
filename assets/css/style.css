@@ -2,8 +2,10 @@
 
 :root {
   --background: #222;
+  --background-secondary: #111;
   --foreground: #DEE;
   --accent: #159957;
+  --accent-secondary: #155799;
 }
 
 body {
@@ -41,11 +43,11 @@ hr {
 header {
   padding: 5rem 6rem;
   text-align: center;
-  background-image: linear-gradient(2rad, #155799, #159957);
+  background-image: linear-gradient(2rad, var(--accent-secondary), var(--accent));
 }
 
 footer > hr {
-  background: #111;
+  background: var(--background-secondary);
 }
 
 p {
@@ -55,6 +57,23 @@ p {
 img {
   border-radius: 0.3rem;
   max-width: 100%;
+}
+
+blockquote, pre {
+  border-radius: 0.15rem;
+  box-shadow: var(--background-secondary) 0rem 0rem 0.15rem;
+  margin: 0rem 2rem;
+}
+
+blockquote {
+  border-color: var(--accent-secondary);
+  border-left-width: 0.2rem;
+  border-left-style: solid;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .shadow {
