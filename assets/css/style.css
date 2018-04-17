@@ -52,6 +52,11 @@ p {
   padding: 0em 0.5em;
 }
 
+img {
+  border-radius: 0.3rem;
+  max-width: 100%;
+}
+
 .shadow {
   text-shadow: var(--background) 0em 0em 0.08em;
 }
