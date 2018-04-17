@@ -6,7 +6,7 @@ OUTPUT_DIRECTORY := site
 OUTPUT_EXTENSION := .html
 OUTPUT_TYPE := html5
 
-TEMPLATE_FILE := index.html
+TEMPLATE_FILE := templates/layout.html
 
 ASSETS_DIRECTORY := assets
 
