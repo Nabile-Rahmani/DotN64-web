@@ -17,7 +17,7 @@ GENERATOR := pandoc
 GENERATOR_FLAGS = --standalone --from $(SOURCE_TYPE) --to $(OUTPUT_TYPE) --template=$(TEMPLATE_FILE)
 
 DEPLOY_SERVER := 192.168.1.51
-DEPLOY_PATH := /var/www/Webfiles/DotN64
+DEPLOY_PATH := /var/www/nabile.duckdns.org/DotN64
 
 $(OUTPUT_DIRECTORY)/%$(OUTPUT_EXTENSION): $(SOURCE_DIRECTORY)/%$(SOURCE_EXTENSION)
 	mkdir -p $(OUTPUT_DIRECTORY)
