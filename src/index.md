@@ -16,13 +16,15 @@ This project was started thanks to [ferris](http://iamferris.com/)' amazing seri
 
 I strive to make the source code as elegant as I can while keeping an eye on performance.
 
+You can join the [Discord64 server](https://discord.gg/X4rwx2J) to chat with us.
+
 ### Status
 
 Game code is executed and audio/video interrupts are serviced, which probably cause the OS to save thread states as it switches contexts.
 
 ### Goals
 
-* Implement angrylion's RDP core in the short term.
+* ✅ Implement angrylion's RDP core in the short term.
 
 * Support expansion devices such as the 64DD.
 

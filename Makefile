@@ -27,7 +27,7 @@ all: $(OUTPUT_FILES)
 	cp -r $(ASSETS_DIRECTORY)/. $(OUTPUT_DIRECTORY)
 
 deploy: all
-	scp -r $(OUTPUT_DIRECTORY)/. $(DEPLOY_SERVER):$(DEPLOY_PATH)
+	rsync -rz --info=progress2 $(OUTPUT_DIRECTORY)/ $(DEPLOY_SERVER):$(DEPLOY_PATH)
 
 clean:
 	rm -r $(OUTPUT_DIRECTORY)
